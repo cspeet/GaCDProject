@@ -1,0 +1,85 @@
+Code Book for tidyset2.txt 
+==========================
+
+The original input data for this dataset was taken from the UCI HAR Dataset, consisting of accelerometer and gyroscope 3-axial raw signals that were collected and processed according to the txt description supplied in the features_info.txt file that was included with the UCI HAR Dataset.
+
+From the originally presented data, the test and train data sets were merged into a single data frame using the same column names (as specified in the features.txt file that accompanies the data set). From the original 651 quantitative variables in the original dataset, the calculated mean and standard deviation measurements were selected for inclusion in this tidy dataset. The subject and activity variables were added to link the measurements to test subjects and applicable activities, and the activities were given descriptive labels.
+
+The average of each mean and standard deviation measurement was calculated for each subject and activity combination, and the resulting tidy dataset is herein presented as tidyset2.txt.
+
+The subject variable contains a numeric valued between 1 and 30, indicating to which test subject the measurements in the observation pertain.
+
+The activity variable is an ordered factor variable with 6 levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. These 6 levels represent the activity which the test subject was performing for the given observation.
+
+All remaining variables represent the average of each of the measurements pertaining to the subject/activity that are included in the tidy data set (the selected mean and standard deviation variables from the original data set). These variables can be distinguished by the "average-" prefix which has been pre-pended to the variable name from the original UCI HAR Dataset.
+
+The complete list of variables included in tidyset2.txt are:
+
+subject
+activity
+average-tBodyAcc-mean()-X
+average-tBodyAcc-mean()-Y
+average-tBodyAcc-mean()-Z
+average-tBodyAcc-std()-X
+average-tBodyAcc-std()-Y
+average-tBodyAcc-std()-Z
+average-tGravityAcc-mean()-X
+average-tGravityAcc-mean()-Y
+average-tGravityAcc-mean()-Z
+average-tGravityAcc-std()-X
+average-tGravityAcc-std()-Y
+average-tGravityAcc-std()-Z
+average-tBodyAccJerk-mean()-X
+average-tBodyAccJerk-mean()-Y
+average-tBodyAccJerk-mean()-Z
+average-tBodyAccJerk-std()-X
+average-tBodyAccJerk-std()-Y
+average-tBodyAccJerk-std()-Z
+average-tBodyGyro-mean()-X
+average-tBodyGyro-mean()-Y
+average-tBodyGyro-mean()-Z
+average-tBodyGyro-std()-X
+average-tBodyGyro-std()-Y
+average-tBodyGyro-std()-Z
+average-tBodyGyroJerk-mean()-X
+average-tBodyGyroJerk-mean()-Y
+average-tBodyGyroJerk-mean()-Z
+average-tBodyGyroJerk-std()-X
+average-tBodyGyroJerk-std()-Y
+average-tBodyGyroJerk-std()-Z
+average-tBodyAccMag-mean()
+average-tBodyAccMag-std()
+average-tGravityAccMag-mean()
+average-tGravityAccMag-std()
+average-tBodyAccJerkMag-mean()
+average-tBodyAccJerkMag-std()
+average-tBodyGyroMag-mean()
+average-tBodyGyroMag-std()
+average-tBodyGyroJerkMag-mean()
+average-tBodyGyroJerkMag-std()
+average-fBodyAcc-mean()-X
+average-fBodyAcc-mean()-Y
+average-fBodyAcc-mean()-Z
+average-fBodyAcc-std()-X
+average-fBodyAcc-std()-Y
+average-fBodyAcc-std()-Z
+average-fBodyAccJerk-mean()-X
+average-fBodyAccJerk-mean()-Y
+average-fBodyAccJerk-mean()-Z
+average-fBodyAccJerk-std()-X
+average-fBodyAccJerk-std()-Y
+average-fBodyAccJerk-std()-Z
+average-fBodyGyro-mean()-X
+average-fBodyGyro-mean()-Y
+average-fBodyGyro-mean()-Z
+average-fBodyGyro-std()-X
+average-fBodyGyro-std()-Y
+average-fBodyGyro-std()-Z
+average-fBodyAccMag-mean()
+average-fBodyAccMag-std()
+average-fBodyBodyAccJerkMag-mean()
+average-fBodyBodyAccJerkMag-std()
+average-fBodyBodyGyroMag-mean()
+average-fBodyBodyGyroMag-std()
+average-fBodyBodyGyroJerkMag-mean()
+average-fBodyBodyGyroJerkMag-std()
